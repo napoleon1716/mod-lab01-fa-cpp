@@ -85,7 +85,8 @@ unsigned int faStr2(const char* str) {
 unsigned int faStr3(const char* str) {
     unsigned int sumLength = 0; // Суммарная длина слов
     unsigned int wordCount = 0; // Количество слов
-    bool inWord = false; // Флаг, указывающий на то, находимся ли мы внутри слова
+    bool inWord = false; 
+    // Флаг, указывающий на то, находимся ли мы внутри слова
     while (*str) {
         if (std::isalpha(*str)) { // Если текущий символ - буква
             if (!inWord) { // Если это начало нового слова
